@@ -71,6 +71,10 @@ Fix Mini Jack output - [ComboJack](https://github.com/hackintosh-stuff/ComboJack
 
 [maxis7567](https://github.com/maxis7567/Hackintosh-Dell-7567-OpenCore_Big-Sur)
 
+
+### Get support:
+Telegram chat - https://t.me/dell7567hackintosh
+
 ### Changelogs:
 
 #### 14.12.2021: First release
