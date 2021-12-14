@@ -39,6 +39,7 @@ Here you will need to do couple of things:
 * Change SATA operation to AHCI (If already using windows, google how to)
 * Disable Secure Boot
 * Disable SGX 
+
 Next, go to the Setting --> General --> Boot Sequence and create new boot option that points to ```/EFI/OC/OpenCore.efi``` folder on your USB flash drive, save it and exit from BIOS.
 
 ## Installation process:
