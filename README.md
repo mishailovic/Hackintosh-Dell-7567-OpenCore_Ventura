@@ -47,7 +47,7 @@ Turn on your laptop and press ```f12``` button repeatedly, choose the boot optio
 1. Windows
 2. macOS Base System (External) / Install macOS Big Sur (External) / USB drive name (External)
 
-Choose macOS option and wait while it boots to the recovery screen (this can take some time, up to ~10 min.) Go ahead and format your drives to the APFS, and choose where you wish to the system be installed. Wait while it installs (this can take some time again, depending on your Wi-Fi connection speed :), usually it takes 1~2 hours), your laptop can reboot several times, it's okay, don't worry.
+Choose macOS option and wait while it boots to the recovery screen (this can take some time, up to 10 min.) Go ahead and format your drives to the APFS, and choose where you wish to the system be installed. Wait while it installs (this can take some time again, depending on your Wi-Fi connection speed :), usually it takes 2 hours), your laptop can reboot several times, it's okay, don't worry.
 
 ## Post install: 
 
