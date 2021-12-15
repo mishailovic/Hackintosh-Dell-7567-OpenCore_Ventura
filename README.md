@@ -63,6 +63,8 @@ Smooth scrolling - [MOS](https://mos.caldis.me/)
 
 Fix Mini Jack output - [ComboJack](https://github.com/hackintosh-stuff/ComboJack/tree/master/ComboJack_Installer)
 
+Disable log on boot - remove ```-v``` from NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args in your config.plist, then choose "reset NVRAM" option in OpenCore picker.
+
 
 ### Credits
 
