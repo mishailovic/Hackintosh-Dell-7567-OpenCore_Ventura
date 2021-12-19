@@ -8,20 +8,20 @@
 
 ## What works
 
-Everything except card reader and HDMI output.
+Everything except the card reader and HDMI output.
 
 ## What works partially
 
-Bluetooth works, but might be buggy and glitchy, buy some USB Bluetooth adapter as they are pretty cheap (only 3~4$), i'm using the Buro BU-BT21A adapter which works out of the box.
+Bluetooth works, but might be buggy and glitchy, buy some USB Bluetooth adapters as they are pretty cheap (only 3~4$), I'm using the Buro BU-BT21A adapter which works out of the box.
 
 ## Creating USB installer
-Format your USB flash drive as FAT32. Download the latest [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) package, go to the ```/Utilities/macrecovery/```, open your termial in that folder and type:
+Format your USB flash drive as FAT32. Download the latest [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) package, go to the ```/Utilities/macrecovery/```, open your terminal in that folder, and type:
 
 ```
 python ./macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 download
 ```
 
-After successful download of the BaseSystem.dmg and BaseSystem.chunklist, create folder called ```com.apple.recovery.boot``` on your USB flash drive, and copy BaseSystem.dmg and BaseSystem.chunklist right in it. Next, go ahead and grab latest EFI from [here](https://github.com/mishailovic/Hackintosh-Dell-7567-OpenCore_Monterey/releases). Unpack the "EFI" folder into the root of your USB flash drive, so USB structure will look like this:
+After successful download of the BaseSystem.dmg and BaseSystem.chunklist, create a folder called ```com.apple.recovery.boot``` on your USB flash drive, and copy BaseSystem.dmg and BaseSystem.chunklist right in it. Next, go ahead and grab the latest EFI from [here](https://github.com/mishailovic/Hackintosh-Dell-7567-OpenCore_Monterey/releases). Unpack the "EFI" folder into the root of your USB flash drive, so the USB structure will look like this:
 <details>
   <summary>Folder structure</summary>
 
@@ -32,27 +32,27 @@ Your USB is ready, move to BIOS setup section.
 
 ## BIOS setup
 
-To enter the BIOS turn off your laptop, turn it on, and press ```f12``` button repeatedly. You will see the menu thats lists all your drives and other settings, move to the "BIOS setup" option and hit Enter.
+To enter the BIOS turn off your laptop, turn it on, and press ```f12``` button repeatedly. You will see the menu that lists all your drives and other settings, move to the "BIOS setup" option, and hit Enter.
 
-Here you will need to do couple of things:
+Here you will need to do a couple of things:
 * Disable Legacy Option ROMs
 * Change SATA operation to AHCI (If already using windows, google how to)
 * Disable Secure Boot
 * Disable SGX 
 
-Next, go to the Setting --> General --> Boot Sequence and create new boot option that points to ```/EFI/OC/OpenCore.efi``` folder on your USB flash drive, save it and exit from BIOS.
+Next, go to the Setting --> General --> Boot Sequence and create a new boot option that points to ```/EFI/OC/OpenCore.efi``` folder on your USB flash drive, save it, and exit from BIOS.
 
 ## Installation process
-Turn on your laptop and press ```f12``` button repeatedly, choose the boot option which you configured before. Once you boot the USB, you'll likely be greeted to the following boot options:
+Turn on your laptop and press ```f12``` button repeatedly, choose the boot option which you configured before. Once you boot the USB, you'll likely be greeted with the following boot options:
 
 1. Windows
 2. macOS Base System (External) / Install macOS Big Sur (External) / USB drive name (External)
 
-Choose macOS option and wait while it boots to the recovery screen (this can take some time, up to 10 min.) Go ahead and format your drives to the APFS, and choose where you wish to the system be installed. Wait while it installs (this can take some time again, depending on your Wi-Fi connection speed :), usually it takes 2 hours), your laptop can reboot several times, it's okay, don't worry.
+Choose the macOS option and wait while it boots to the recovery screen (this can take some time, up to 10 min.) Go ahead and format your drives to the APFS, and choose where you wish to the system be installed. Wait while it installs (this can take some time again, depending on your Wi-Fi connection speed :), usually, it takes 2 hours), your laptop can reboot several times, it's okay, don't worry.
 
-## Post install
+## Post-install
 
-After you waked throught the installation process you will need to copy the EFI folder to your system drive, so you can boot without USB. For that download [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/), open it, go to the EFI mount section and mount your system EFI, then locate the EFI folder in Finder and copy EFI folder from your USB right in it. Unplug your USB and reboot the laptop, it should boot successfully without flash drive. Hooray! 🥳 You just installed the Hackintosh on your Dell laptop, go to the "Fixes" section to apply various fixes for your system.
+After you walked through the installation process you will need to copy the EFI folder to your system drive, so you can boot without a USB. For that download [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/), open it, go to the EFI mount section and mount your system EFI, then locate the EFI folder in Finder and copy the EFI folder from your USB right in it. Unplug your USB and reboot the laptop, it should boot successfully without a flash drive. Hooray! 🥳 You just installed the Hackintosh on your Dell laptop, go to the "Fixes" section to apply various fixes for your system.
 
 
 ### Fixes
