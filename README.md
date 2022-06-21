@@ -65,6 +65,9 @@ Fix Mini Jack output - [ComboJack](https://github.com/hackintosh-stuff/ComboJack
 
 Disable log on boot - remove ```-v``` from NVRAM > 7C436110-AB2A-4BBB-A880-FE41995C9F82 > boot-args in your config.plist, then choose "reset NVRAM" option in OpenCore picker.
 
+Fixing sleep and hibernation - [dortania](https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html)
+
+
 ### Performance
 
 The performance is slightly higher than Mid 2017 MacBook Pro. Below you can see Geekbench 5 results.
