@@ -69,6 +69,8 @@ Disable log on boot - remove ```-v``` from NVRAM > 7C436110-AB2A-4BBB-A880-FE419
 
 Fixing sleep and hibernation - [dortania](https://dortania.github.io/OpenCore-Post-Install/universal/sleep.html)
 
+Disable bootpicker - set [this](https://github.com/mishailovic/Hackintosh-Dell-7567-OpenCore_Monterey/blob/3e1d116de17fd61da77ec0ed8df108957a862700/EFI/OC/config.plist#L856) to ```false```.
+
 
 ### Performance
 
