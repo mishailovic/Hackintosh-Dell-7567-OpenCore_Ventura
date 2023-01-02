@@ -1,6 +1,6 @@
 # Warning!!!
 
-This repository is being archived! I have no time to maintain hackintosh and I no longer use it.
+## This repository is being archived! I have no time to maintain hackintosh and I no longer use it.
 
 <p align="center">
 	<img src="https://dortania.github.io/OpenCore-Install-Guide/homepage.png" alt="drawing" width="100"/>
