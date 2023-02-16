@@ -1,7 +1,3 @@
-# Warning!!!
-
-## This repository is being archived! I have no time to maintain hackintosh and I no longer use it.
-
 <p align="center">
 	<img src="https://dortania.github.io/OpenCore-Install-Guide/homepage.png" alt="drawing" width="100"/>
 </p>
@@ -18,13 +14,16 @@ Everything except the card reader and HDMI output.
 
 ~~Bluetooth works, but might be buggy and glitchy, buy some USB Bluetooth adapters as they are pretty cheap (only 3~4$), I'm using the Buro BU-BT21A adapter which works out of the box.~~ 
 
+Wi-Fi might be buggy sometimes. This will be fixed with the future Airportitlwm.kext updates
+
 With the latest itlwm.kext update, Bluetooth works without any issues out of the box.
 
 ## Creating USB installer
 Format your USB flash drive as FAT32. Download the latest [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) package, go to the ```/Utilities/macrecovery/```, open your terminal in that folder, and type:
 
 ```
-python ./macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 download
+python3 macrecovery.py -b Mac-4B682C642B45593E -m 00000000000000000 download
+
 ```
 
 After successful download of the BaseSystem.dmg and BaseSystem.chunklist, create a folder called ```com.apple.recovery.boot``` on your USB flash drive, and copy BaseSystem.dmg and BaseSystem.chunklist right in it. Next, go ahead and grab the latest EFI from [here](https://github.com/mishailovic/Hackintosh-Dell-7567-OpenCore_Monterey/releases). Unpack the "EFI" folder into the root of your USB flash drive, so the USB structure will look like this:
