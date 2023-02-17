@@ -12,11 +12,8 @@ Everything except the card reader and HDMI output.
 
 ## What works partially
 
-~~Bluetooth works, but might be buggy and glitchy, buy some USB Bluetooth adapters as they are pretty cheap (only 3~4$), I'm using the Buro BU-BT21A adapter which works out of the box.~~ 
-
 Wi-Fi might be buggy sometimes. This will be fixed with the future Airportitlwm.kext updates
 
-With the latest itlwm.kext update, Bluetooth works without any issues out of the box.
 
 ## Creating USB installer
 Format your USB flash drive as FAT32. Download the latest [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) package, go to the ```/Utilities/macrecovery/```, open your terminal in that folder, and type:
