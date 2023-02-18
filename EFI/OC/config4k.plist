@@ -1037,7 +1037,7 @@
 				<key>SystemAudioVolume</key>
 				<data>QA==</data>
 				<key>boot-args</key>
-				<string>-v</string>
+				<string>-v -igfxmpc</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
