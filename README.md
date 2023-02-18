@@ -34,6 +34,7 @@ If your built in display is 4k:
 If your built in display is 1080p:
 * Delete the "config4k.plist" file located in ```/EFI/OC/```
 
+### Final Checks
 When finished the USB structure will look like this:
 <details>
   <summary>Folder structure</summary>
