@@ -16,19 +16,31 @@ Wi-Fi might be buggy sometimes. This will be fixed with the future Airportitlwm.
 
 
 ## Creating USB installer
-Format your USB flash drive as FAT32. Download the latest [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) package, go to the ```/Utilities/macrecovery/```, open your terminal in that folder, and type:
+Format your USB flash drive as FAT32. If you have something 32GB or smaller then use that. If you only have larger drives, then you can use a program like [MiniTool Partition Wizard](https://www.partitionwizard.com/) to format it to FAT32. Download the latest [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) package, go to the ```/Utilities/macrecovery/```, open your terminal in that folder, and type:
 
 ```
 python3 macrecovery.py -b Mac-4B682C642B45593E -m 00000000000000000 download
 
 ```
 
-After successful download of the BaseSystem.dmg and BaseSystem.chunklist, create a folder called ```com.apple.recovery.boot``` on your USB flash drive, and copy BaseSystem.dmg and BaseSystem.chunklist right in it. Next, go ahead and grab the latest EFI from [here](https://github.com/mishailovic/Hackintosh-Dell-7567-OpenCore_Monterey/releases). Unpack the "EFI" folder into the root of your USB flash drive, so the USB structure will look like this:
+After a successful download, copy the folder called ```com.apple.recovery.boot``` into the root of your USB flash drive. Next, go ahead and grab the latest EFI from [here](https://github.com/mishailovic/Hackintosh-Dell-7567-OpenCore_Monterey/releases). Unpack the "EFI" folder into the root of your USB flash drive.
+
+### 4K Screen
+If your built in display is 4k:
+* Delete the "config.plist" file located in ```/EFI/OC/```
+* Rename the "config4k.plist" file to "config.plist"
+
+### 1080p screen
+If your built in display is 1080p:
+* Delete the "config4k.plist" file located in ```/EFI/OC/```
+
+### Final Checks
+When finished the USB structure will look like this:
 <details>
   <summary>Folder structure</summary>
 
 ![](img/folder.png)  
-  
+
 </details>
 Your USB is ready, move to BIOS setup section.
 
@@ -40,7 +52,7 @@ Here you will need to do a couple of things:
 * Disable Legacy Option ROMs
 * Change SATA operation to AHCI (If already using windows, google how to)
 * Disable Secure Boot
-* Disable SGX 
+* Disable SGX
 
 Next, go to the Setting --> General --> Boot Sequence and create a new boot option that points to ```/EFI/OC/OpenCore.efi``` folder on your USB flash drive, save it, and exit from BIOS.
 
@@ -79,9 +91,9 @@ The performance is slightly higher than Mid 2017 MacBook Pro. Below you can see 
 <details>
   <summary>Geekbench 5 score</summary>
 
-![](img/bench1.png) 
-![](img/bench2.png) 
-  
+![](img/bench1.png)
+![](img/bench2.png)
+
 </details>
 
 
@@ -93,9 +105,9 @@ The performance is slightly higher than Mid 2017 MacBook Pro. Below you can see 
 
 [maxis7567](https://github.com/maxis7567/Hackintosh-Dell-7567-OpenCore_Big-Sur)
 
+[charliekempf](https://github.com/charliekempf) - For 4K support
+
 
 ### Get support
 
 Telegram chat - https://t.me/dell7567hackintosh
-
-
