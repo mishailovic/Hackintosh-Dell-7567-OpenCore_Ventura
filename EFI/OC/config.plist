@@ -411,7 +411,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.3</string>
+                    <string>V1.6.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -429,7 +429,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.0</string>
+                    <string>V1.3.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -447,7 +447,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.4</string>
+                    <string>V1.6.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -465,7 +465,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.7.9</string>
+                    <string>V1.8.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -483,7 +483,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.0</string>
+                    <string>V1.3.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -501,7 +501,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.0</string>
+                    <string>V1.3.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -519,7 +519,7 @@
                     <key>BundlePath</key>
                     <string>SMCDellSensors.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.0</string>
+                    <string>V1.3.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -591,7 +591,7 @@
                     <key>BundlePath</key>
                     <string>VoodooI2C.kext</string>
                     <key>Comment</key>
-                    <string>V2.7.1</string>
+                    <string>V2.8</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -627,7 +627,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.3</string>
+                    <string>V2.3.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -645,7 +645,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.3</string>
+                    <string>V2.3.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -681,7 +681,7 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm.kext</string>
                     <key>Comment</key>
-                    <string>V2.1.0</string>
+                    <string>V2.2.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -717,7 +717,7 @@
                     <key>BundlePath</key>
                     <string>BlueToolFixup.kext</string>
                     <key>Comment</key>
-                    <string>V2.6.4</string>
+                    <string>V2.6.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -783,6 +783,8 @@
                 <true/>
                 <key>DisableIoMapper</key>
                 <true/>
+                <key>DisableIoMapperMapping</key>
+                <false/>
                 <key>DisableLinkeditJettison</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
@@ -1271,16 +1273,22 @@
             <dict>
                 <key>ClearScreenOnModeSwitch</key>
                 <false/>
+                <key>ConsoleFont</key>
+                <string></string>
                 <key>ConsoleMode</key>
                 <string></string>
                 <key>DirectGopRendering</key>
                 <false/>
                 <key>ForceResolution</key>
                 <false/>
+                <key>GopBurstMode</key>
+                <false/>
                 <key>GopPassThrough</key>
                 <string>Disabled</string>
                 <key>IgnoreTextInGraphics</key>
                 <false/>
+                <key>InitialMode</key>
+                <string></string>
                 <key>ProvideConsoleGop</key>
                 <true/>
                 <key>ReconnectGraphicsOnConnect</key>
@@ -1335,6 +1343,8 @@
                 <key>HashServices</key>
                 <false/>
                 <key>OSInfo</key>
+                <false/>
+                <key>PciIo</key>
                 <false/>
                 <key>UnicodeCollation</key>
                 <false/>
