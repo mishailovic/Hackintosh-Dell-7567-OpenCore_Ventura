@@ -68,10 +68,13 @@ Choose the macOS option and wait while it boots to the recovery screen (this can
 
 After you walked through the installation process you will need to copy the EFI folder to your system drive, so you can boot without a USB. For that download [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/), open it, go to the EFI mount section and mount your system EFI, then locate the EFI folder in Finder and copy the EFI folder from your USB right in it. Unplug your USB and reboot the laptop, it should boot successfully without a flash drive. Hooray! 🥳 You just installed the Hackintosh on your Dell laptop, go to the "Fixes" section to apply various fixes for your system.
 
+The included `USBMap.kext` assumed that you use SMBIOS model `MacBookPro14,1`. If you decided to use `MacBookPro15,1` for better Sonoma support, you also need to update the USBMap accordingly.
 
 ### Fixes
 
 Generate the SMBIOS - [dortania](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios)
+
+USB Mapping (need to match your SMBIOS model) - [dortania](https://dortania.github.io/OpenCore-Post-Install/usb/intel-mapping/intel.html) / [USBMap](https://github.com/corpnewt/USBMap)
 
 Smooth scrolling - [MOS](https://mos.caldis.me/)
 
