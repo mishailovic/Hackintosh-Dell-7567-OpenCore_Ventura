@@ -111,6 +111,3 @@ The performance is slightly higher than Mid 2017 MacBook Pro. Below you can see 
 [charliekempf](https://github.com/charliekempf) - For 4K support
 
 
-### Get support
-
-Telegram chat - https://t.me/dell7567hackintosh
