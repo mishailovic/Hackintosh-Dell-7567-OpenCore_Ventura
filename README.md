@@ -3,6 +3,7 @@
 </p>
 
 <h1>Hackintosh OpenCore Dell Inspiron 15 Gaming 7567</h1>
+<h1>ARCHIVED! PLEASE REFER TO SirDank's [FORK](https://github.com/dell-7567-hackintosh/Sonoma) INSTEAD</h1>
 
 ![](img/screenshot.png)
 
